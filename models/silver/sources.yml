@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: bronze
+    catalog: dbt_demo
+    schema: bronze
+    tables:
+      - name: customers
+      - name: orders
