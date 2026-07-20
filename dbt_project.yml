@@ -1,0 +1,16 @@
+name: 'dbt_demo'
+version: '1.0.0'
+config-version: 2
+
+profile: 'dbt_demo'
+
+model-paths: ["models"]
+macro-paths: ["macros"]
+
+models:
+  dbt_demo:
+    +materialized: view       # project-wide default
+
+    silver:
+      +schema: silver
+      +materialized: view    
